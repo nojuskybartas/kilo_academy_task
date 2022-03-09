@@ -5,13 +5,17 @@ import MembershipPlanInfo from './components/MembershipPlanInfo';
 import MoreInfo from './components/MoreInfo';
 import SuccessStories from './components/SuccessStories';
 import LogoBanner from './components/LogoBanner';
+import { useRecoilValue } from 'recoil';
+import { discountActiveAtom } from './atoms/discountAtom';
 
 
 function App() {
 
+  const discountActive = useRecoilValue<boolean>(discountActiveAtom)
+
   return (
     <div className='w-full h-screen overflow-y-scroll'>
-      <DiscountBanner/> 
+      {discountActive && <DiscountBanner/>}
       <div className='w-full h-full flex flex-col items-center'>
         <LogoBanner/>
         <p className='w-full md:text-center p-3 mt-5'>Over <span className='font-semibold'>52 147</span> plans ordered.</p>
