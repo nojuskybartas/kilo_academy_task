@@ -25,7 +25,7 @@ function DiscountBanner() {
     return () => {
       clearInterval(interval);
     };
-  })
+  }, [])
 
   const formatTimeInHHMMSS = (time: number) => {
     var hours: any = Math.floor(time / (1000 * 60 * 60));
