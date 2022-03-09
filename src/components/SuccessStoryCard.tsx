@@ -15,7 +15,7 @@ type SuccessStoryCardProps = {
 function SuccessStoryCard({name, age, address, rating, image, description}: SuccessStoryCardProps) {
 
     return (
-        <div className='w-full min-w-[350px] max-w-sm h-[650px] border border-solid border-gray-300 rounded-2xl p-6 flex flex-col text-left shadow-lg mt-5 mb-10'>
+        <div className='w-full min-w-[350px] max-w-sm h-[650px] snap-center border border-solid border-gray-300 rounded-2xl p-6 flex flex-col text-left shadow-lg mt-5 mb-10'>
             <h3 className='font-semibold'>{name}, {age}</h3>
             <p className='text-sm font-light'>{address}</p>
             <div className="flex items-center w-fit h-fit text-primary mb-5 mt-5">

@@ -36,7 +36,7 @@ function QuestionContainer({initialyIsOpen=false, question, answer}: QuestionCon
     }
 
     return (
-        <div className='w-full h-fit border border-solid border-gray-300 rounded-2xl mb-10 p-5 cursor-pointer' onClick={() => setIsOpen(open => !open)}>
+        <div className='w-full h-fit border border-solid border-gray-300 rounded-2xl mb-4 p-5 cursor-pointer' onClick={() => setIsOpen(open => !open)}>
             <div className='w-full h-fit flex justify-between'>
                 <h3 className='font-semibold'>{question}</h3>
                 <FontAwesomeIcon icon={isOpen ? faAngleUp : faAngleDown} className='w-6 h-6 text-gray-800'/>

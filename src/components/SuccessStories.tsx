@@ -43,7 +43,7 @@ function SuccessStories() {
     return (
         <Wrapper ariaLabel='Success stories' title={<span className='flex justify-center'>Hear success stories from our clients</span>} fullWidth className='flex flex-col items-center'>
             
-            <div className='w-full flex space-x-6 items-center md:justify-center overflow-x-scroll scrollbar-hide'>
+            <div className='w-full flex space-x-6 items-center md:justify-center overflow-x-scroll snap-x snap-mandatory scrollbar-hide'>
                 {reviewCards}
             </div>            
 
