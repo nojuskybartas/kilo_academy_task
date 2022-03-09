@@ -7,7 +7,7 @@ import { discountActiveAtom } from '../atoms/discountAtom'
 function DiscountBanner() {
 
   const [timeRemaining, setTimeRemaining] = useState<number>(900000)
-  const [discountActive, setDiscountActive] = useRecoilState<boolean>(discountActiveAtom)
+  const [, setDiscountActive] = useRecoilState<boolean>(discountActiveAtom)
 
   useEffect(() => {
     const startTime = new Date()
@@ -25,7 +25,7 @@ function DiscountBanner() {
     return () => {
       clearInterval(interval);
     };
-  }, [])
+  })
 
   const formatTimeInHHMMSS = (time: number) => {
     var hours: any = Math.floor(time / (1000 * 60 * 60));
