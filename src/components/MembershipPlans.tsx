@@ -32,7 +32,7 @@ export default function MembershipPlans() {
             ))}
             <ThemeButton label='Get your plan' onClick={() => console.log({selectedPlan: planOptions[selectedPlan]})}/>
             <p className='text-center text-sm'>After 7 days free trial subscription payment is automatically charged from your account unless it is canceled at least 24 hours before the end of the trial period.</p>
-            <p className='text-center text-sm'>By choosing a payment method you agree to the <a>T&Cs</a> and <a>Privacy Policy</a></p>
+            <p className='text-center text-sm'>By choosing a payment method you agree to the <span className='link'>T&Cs</span> and <span className='link'>Privacy Policy</span></p>
             <img src={safeCheckoutGuarantee} alt='Safe Checkout Guarantee' className='w-full h-fit self-center'/>
         </Wrapper>
     )

@@ -28,7 +28,7 @@ function MembershipPlanOption({months, price, percentDiscount, selected, onClick
 
     useEffect(() => {
         if (!discountActive)
-        setOptionPrice(price)
+        setOptionPrice(price => price)
     }, [discountActive])
 
     return (

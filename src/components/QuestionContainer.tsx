@@ -1,4 +1,4 @@
-import React, { MutableRefObject, ReactNode, useRef, useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from 'framer-motion'

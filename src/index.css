@@ -10,7 +10,7 @@ body {
 @tailwind utilities;
 
 @layer components {
-  a {
+  .link {
     @apply text-blue-300 cursor-pointer;
   }
 }
